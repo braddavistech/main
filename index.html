@@ -2,20 +2,20 @@
 <html>
   <head>
     <meta name="author" content="BradDavis">
-	  <meta name="description" content="Better Options TN is an organization created to assist people of all nationalities that come to live in Tennessee and to introduce them to the law of the land. We will accomplish this through Mentoring, Life Coaching, Legal Information, Housing and Rental Referrals, and Translation and Interpretation Services">
+    <meta name="description" content="Better Options TN is an organization created to assist people of all nationalities that come to live in Tennessee and to introduce them to the law of the land. We will accomplish this through Mentoring, Life Coaching, Legal Information, Housing and Rental Referrals, and Translation and Interpretation Services">
 	
     <style name="AppTheme" parent="AppBaseTheme">
 	    <item name="android:actionBarStyle">@style/MyActionBar</item>
-	  </style>
+    </style>
 	
     <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
     		<item name="android:background">#2C509E</item>
     		<item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
-	  </style>
+    </style>
 	
     <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.StatusBar.Title">
     		<item name="android:textColor">#000000</item>
-	  </style>
+    </style>
   
     <style>
       *{
@@ -26,7 +26,7 @@
         position: fixed;
         top: 0vw;
         width: 100vw;
-        height: 12vw;
+        height: 10vw;
         background-color: #2C509E;
         z-index: 10;
       }
@@ -36,30 +36,31 @@
         width: 100vw;
         text-align: center;
         color: white;
-        font-size:9vw;
+        font-size:7vw;
         z-index: 2;
       }
       #slogan{
         position: fixed;
-        top: 9.5vw;
+        top: 8vw;
         width: 100vw;
         text-align: center;
         color: white;
-        font-size:1.75vw;
+        font-size:1.5vw;
         z-index: 2;
       }
       #logo{
         position: fixed;
-        width: 10vw;
-        margin-top: 1vw;
-        margin-left: 5vw;
+        width: 9vw;
+        margin-top: .5vw;
+        margin-left: 10vw;
         z-index: 2;
       }
-      #donate{
+      .contact {
         position: fixed;
-        width: 18vw;
-        margin-left: 80vw;
-        top: 1.75vw;
+        margin-top: .5vw;
+        margin-left: 81vw;
+        border-radius: 50vw;
+        width: 9vw;
         z-index: 2;
       }
       .aboutUs{
@@ -127,28 +128,26 @@
         height: 4vw;
         z-index: 10;
       }
-      .contact {
-        position: fixed;
-        margin-top: .5vw;
-        margin-left: 5vw;
-        border-radius: 50vw;
-        width: 3vw;
-        opacity: 1;
-      }
       #copyright{
         color: white;
         width: 100vw;
         font-size: 1.5vw;
         text-align: center;
-        margin-top: .5vw;
-        line-height: 1;
+        line-height: 1.4;
+        z-index: 2;
+      }
+      #donate{
+        position: fixed;
+        width: 10vw;
+        margin-top: -.5vw;
+        margin-left: 5vw;
         z-index: 2;
       }
       .facebook{
         position: fixed;
-        margin-top: -3.5vw;
+        margin-top: -3.8vw;
         margin-left: 85vw;
-        width: 7vw;
+        width: 8vw;
       }
     </style>
   </head>
@@ -156,8 +155,8 @@
     <div class="titleHeader">
       <p id="title">Better Options</p>
       <p id="slogan">Building strong families for a better community.</p>
-      <img src="betterOptionsLogo.png" id="logo"/>
-      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B9MYYBMV69EN8" target="_blank"><img src="paypalDonate.png" id="donate"></a>
+      <img src="betterOptionsLogo.png" id="logo">
+      <a href="mailto:betteroptionstn@gmail.com" target="_blank"><img src="contactUs.jpg" class="contact"></a>
     </div>
 
     <div class="aboutUs">
@@ -181,10 +180,10 @@
     </div>
 
     <div class="footer">
-      <a href="mailto:Luissura64@gmail.com"><img src="contactUs.jpg" class="contact"></a>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B9MYYBMV69EN8" target="_blank"><img src="paypalDonate.png" id="donate"></a>
       <p id="copyright">1338 West Main Street, Franklin, TN 37064</p>
       <p id="copyright">(615) 424-0045</p>
       <a href="https://www.facebook.com/better.optionstn"><img src="facebook.png" class="facebook"></a>
     </div>
   </body>
-<//html>
+</html>
