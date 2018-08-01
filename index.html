@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="BradDavis">
+	  <meta name="description" content="Better Options TN is an organization created to assist people of all nationalities that come to live in Tennessee and to introduce them to the law of the land. We will accomplish this through Mentoring, Life Coaching, Legal Information, Housing and Rental Referrals, and Translation and Interpretation Services">
+	
+    <style name="AppTheme" parent="AppBaseTheme">
+	    <item name="android:actionBarStyle">@style/MyActionBar</item>
+	  </style>
+	
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+    		<item name="android:background">#2C509E</item>
+    		<item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+	  </style>
+	
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.StatusBar.Title">
+    		<item name="android:textColor">#000000</item>
+	  </style>
+  
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .titleHeader{
+        position: fixed;
+        top: 0vw;
+        width: 100vw;
+        height: 12vw;
+        background-color: #2C509E;
+        z-index: 10;
+      }
+      #title{
+        position: fixed;
+        top: -.5vw;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        font-size:9vw;
+        z-index: 2;
+      }
+      #slogan{
+        position: fixed;
+        top: 9.5vw;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        font-size:1.75vw;
+        z-index: 2;
+      }
+      #logo{
+        position: fixed;
+        width: 10vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        z-index: 2;
+      }
+      #donate{
+        position: fixed;
+        width: 18vw;
+        margin-left: 80vw;
+        top: 1.75vw;
+        z-index: 2;
+      }
+      .aboutUs{
+        position: relative;
+        margin-top: 15vw;
+        width: 80vw;
+        margin-left: 10vw;
+        z-index: 1;
+      }
+      #headerList{
+        position: relative;
+        font-size: 3vw;
+        font-color: black;
+        font-weight: bold;
+        text-align: center;
+      }
+      #paragraphBody{
+        position: relative;
+        font-size: 2vw;
+        font-color: black;
+        text-align: center;
+      }
+      .meetTheTeam{
+        position: relative;
+        width: 80vw;
+        margin-top: 10vw;
+        margin-left: 10vw;
+        z-index: 1;
+      }
+      #teamPic {
+        margin-top: 2vw;
+        width: 70vw;
+        margin-left: 5vw;
+      }
+      #teamDescription{
+        position: relative;
+        font-size: 3vw;
+        font-color: black;
+        font-weight: bold;
+        text-align: center;
+      }
+      .street {
+        margin-top: 10vw;
+      }
+      .street a img{
+        position: relative;
+        width:60vw;
+        margin-left: 20vw;
+        margin-top: 2vw;
+        opacity: .7;
+      }
+      .street a img:hover{
+        opacity: 1;
+      }
+      #directions{
+        text-align: center;
+        margin-top: 2vw;
+        font-size: 3vw;
+        font-weight: bolder;
+      }
+      .footer{
+        position: fixed;
+        bottom: 0px;
+        background-color: #2C509E;
+        height: 4vw;
+        z-index: 10;
+      }
+      .contact {
+        position: fixed;
+        margin-top: .5vw;
+        margin-left: 5vw;
+        border-radius: 50vw;
+        width: 3vw;
+        opacity: 1;
+      }
+      #copyright{
+        color: white;
+        width: 100vw;
+        font-size: 1.5vw;
+        text-align: center;
+        margin-top: .5vw;
+        line-height: 1;
+        z-index: 2;
+      }
+      .facebook{
+        position: fixed;
+        margin-top: -3.5vw;
+        margin-left: 85vw;
+        width: 7vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titleHeader">
+      <p id="title">Better Options</p>
+      <p id="slogan">Building strong families for a better community.</p>
+      <img src="betterOptionsLogo.png" id="logo"/>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B9MYYBMV69EN8" target="_blank"><img src="paypalDonate.png" id="donate"></a>
+    </div>
+
+    <div class="aboutUs">
+      <p id="headerList">MISSION</p>
+      <p id="paragraphBody"><br>Better Options TN exists to help people of all nationalities and engage them in a way that's beneficial for all cultures. We will accomplish this through: <br><br> Mentoring <br> Life Coaching <br> Legal Information <br> Housing and Rental Referrals <br> Translation and Interpretation Services </p>
+      <p id="headerList"><br>VISION</p>
+      <p id="paragraphBody"><br>Better Options TN is an organization created to assist people of all nationalities that come to live in Tennessee and to introduce them to the law of the land.</p>
+    </div>
+
+    <div class="meetTheTeam">
+        <p id="teamDescription">Meet the Team</p>
+        <img src="luis.jpg" id="teamPic">
+    </div>
+
+
+
+    <div class="street">
+      <p id="headerList">Our Office</p>
+      <a href="https://www.google.com/maps/place/1338+W+Main+St,+Franklin,+TN+37064/@35.9140887,-86.8878793,17z/data=!3m1!4b1!4m5!3m4!1s0x88647fcbc4073d95:0xf1b63c638b7bdbaa!8m2!3d35.9140887!4d-86.8856853?hl=en" target="_blank"><img src="streetView.jpg"></a>
+      <p id="directions">Better Options<br>1338 West Main Street<br>Franklin, TN 37064<br><br><br><br></p>
+    </div>
+
+    <div class="footer">
+      <a href="mailto:Luissura64@gmail.com"><img src="contactUs.jpg" class="contact"></a>
+      <p id="copyright">1338 West Main Street, Franklin, TN 37064</p>
+      <p id="copyright">(615) 424-0045</p>
+      <a href="https://www.facebook.com/better.optionstn"><img src="facebook.png" class="facebook"></a>
+    </div>
+  </body>
+<//html>
