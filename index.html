@@ -23,49 +23,62 @@
         padding: 0px;
       }
       .titleHeader{
-        position: fixed;
+        position: relative;
         top: 0vw;
         width: 100vw;
-        height: 10vw;
+        height: 9vw;
         background-color: #2C509E;
         z-index: 10;
       }
       #title{
-        position: fixed;
+        position: relative;
         top: -.5vw;
         width: 100vw;
         text-align: center;
         color: white;
-        font-size:7vw;
-        z-index: 2;
-      }
-      #slogan{
-        position: fixed;
-        top: 8vw;
-        width: 100vw;
-        text-align: center;
-        color: white;
-        font-size:1.5vw;
+        line-height: 1;
+        font-size:9vw;
         z-index: 2;
       }
       #logo{
-        position: fixed;
-        width: 9vw;
-        margin-top: .5vw;
+        position: absolute;
+        width: 8.5vw;
+        margin-top: -8.5vw;
         margin-left: 10vw;
         z-index: 2;
       }
       .contact {
-        position: fixed;
-        margin-top: .5vw;
-        margin-left: 81vw;
+        position: absolute;
+        margin-top: -8.5vw;
+        margin-left: 81.5vw;
         border-radius: 50vw;
-        width: 9vw;
+        width: 8.5vw;
         z-index: 2;
+      }
+      .menu{
+        position:sticky;
+        top: -.25vw;
+        width: 100vw;
+        text-align: center;
+        background-color: #2C509E;
+        z-index: 10;
+      }
+      #menu{
+        position: sticky;
+        background-color: #2C509E;
+        color: white;
+        top: 10vw;
+        font-size: 2vw;
+        padding-left:3vw;
+        padding-right: 3vw;
+        text-decoration: none;
+      }
+      #menu:hover{
+        color: #FCD821;
       }
       .aboutUs{
         position: relative;
-        margin-top: 15vw;
+        margin-top:3vw;
         width: 80vw;
         margin-left: 10vw;
         z-index: 1;
@@ -110,9 +123,6 @@
         width:60vw;
         margin-left: 20vw;
         margin-top: 2vw;
-        opacity: .7;
-      }
-      .street a img:hover{
         opacity: 1;
       }
       #directions{
@@ -141,22 +151,40 @@
         width: 10vw;
         margin-top: -.5vw;
         margin-left: 5vw;
-        z-index: 2;
+        z-index: 15;
+      }
+      #slogan{
+        position: relative;
+        top: 0vw;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        font-size:2vw;
+        z-index: 1;
       }
       .facebook{
         position: fixed;
-        margin-top: -3.8vw;
+        margin-top: -4.2vw;
         margin-left: 85vw;
         width: 8vw;
+        z-index: 15;
       }
     </style>
   </head>
   <body>
     <div class="titleHeader">
       <p id="title">Better Options</p>
-      <p id="slogan">Building strong families for a better community.</p>
       <img src="betterOptionsLogo.png" id="logo">
       <a href="mailto:betteroptionstn@gmail.com" target="_blank"><img src="contactUs.jpg" class="contact"></a>
+    </div>
+
+    <div class="menu">
+      <a href="www.betteroptionstn.com/main" id="menu">HOME</a>
+      <a href="www.betteroptionstn.com/aboutUs" id="menu">ABOUT US</a>
+      <a href="www.betteroptionstn.com/services" id="menu">SERVICES</a>
+      <a href="www.betteroptionstn.com/blog" id="menu">BLOG</a>
+      <a href="www.betteroptionstn.com/faq" id="menu">FAQ</a>
+      <a href="www.betteroptionstn.com/gallery" id="menu">GALLERY</a>
     </div>
 
     <div class="aboutUs">
@@ -181,8 +209,8 @@
 
     <div class="footer">
       <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B9MYYBMV69EN8" target="_blank"><img src="paypalDonate.png" id="donate"></a>
-      <p id="copyright">1338 West Main Street, Franklin, TN 37064</p>
-      <p id="copyright">(615) 424-0045</p>
+      <p id="slogan">Building strong families for a better community.</p>
+      <p id="copyright">1338 West Main Street, Franklin, TN 37064 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (615) 424-0045</p>
       <a href="https://www.facebook.com/better.optionstn"><img src="facebook.png" class="facebook"></a>
     </div>
   </body>
